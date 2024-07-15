@@ -78,6 +78,7 @@ nav:hover{
 }
 
 .nav__container{
+    position: relative;
     width: 100%;
     height: 5rem;
     margin: 0 auto;
@@ -111,6 +112,10 @@ nav:hover{
     background-color:#FF5F1F;
     transition: var(--transition);
     color: #28282B;
+}
+
+.close_open-icon{
+    display: none;
 }
 
 /* ============ Header section styling ========================= */
@@ -293,8 +298,81 @@ footer{
 }
 
 
+/* ======================= Media queries for Tablets =================================== */
+
+@media screen and (max-width: 1024px){}
 
 
+/* =======================Media queries for Mobile phones ============================== */
+
+@media screen and (max-width: 600px){
+
+    .location__map iframe{
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .nav__container{
+        display: flex;
+        justify-content:end;
+        align-items: center;
+    }
+
+    .close_open-icon{
+        padding: 0.5rem;        
+    }
 
 
+    .menu__items{
+        position: absolute;
+        display: flex;
+        flex-direction: column;        
+        /* justify-content: center;
+        align-items: center; */
+        right: -100%;
+        top: 5rem;
+        height: 15rem;        
+        background-color: #BEC3C9;
+        gap: 1rem;
+        transition: all 600ms ease;               
+                                
+    }
+
+    .menu__items:hover{
+        box-shadow: var(--box-shadow);
+    }
+
+    .menu__items a{
+        /* background-color: #FF5F1F; */
+        width: 90%;        
+    }
+
+    .close_open-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.25rem;
+    }
+
+    .close_open-icon span.showmenu, .close_open-icon span.closemenu{
+        font-size: 2rem;
+    }
+
+    .showmenu{
+        display: flex;        
+    }
+
+    /* .closemenu{
+        display: none;
+    } */    
+
+    .show{
+        display: none;
+    }
+
+    .slide-side-sidebar{
+        right: 0;
+    }
+
+}
 
