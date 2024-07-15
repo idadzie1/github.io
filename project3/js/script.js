@@ -1,4 +1,5 @@
 
+
 document.addEventListener('DOMContentLoaded', ()=>{
 
     const horizontalbars = document.querySelector('.showmenu');
@@ -12,14 +13,14 @@ document.addEventListener('DOMContentLoaded', ()=>{
         crossbar.classList.toggle('show');
         sidebar.classList.toggle('slide-side-sidebar');
 
-    })
+    });
 
         crossbar.addEventListener('click', ()=>{
         horizontalbars.classList.toggle('show');
         crossbar.classList.toggle('show');
         sidebar.classList.toggle('slide-side-sidebar');
         
-    })
+    });
     
     
         sidebar.addEventListener('click', ()=>{
@@ -27,4 +28,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
         horizontalbars.classList.toggle('show');
         crossbar.classList.toggle('show');
 
-    })
+    });
+
+    
+
+});
