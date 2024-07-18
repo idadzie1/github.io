@@ -1,5 +1,6 @@
 
 
+
 document.addEventListener('DOMContentLoaded', ()=>{
 
     const horizontalbars = document.querySelector('.showmenu');
@@ -30,6 +31,14 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     });
 
+    window.addEventListener('scroll', ()=>{
+        document.querySelector('nav').classList.toggle('scrolled', window.scrollY > 0)
+    })
+
     
 
 });
+
+
+
+
