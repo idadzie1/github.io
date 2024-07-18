@@ -537,10 +537,7 @@ footer{
 /* =========================================================================== */
 
 @media screen and (max-width: 480px){
-    body{
-        background-color: black;
-    }
-
+    
     header .main__features{
         display: flex;
         flex-direction: column;
