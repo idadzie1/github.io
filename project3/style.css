@@ -337,7 +337,7 @@ footer{
         display: flex;
         justify-content:end;
         align-items: center;
-        width: 80%
+        width: 80%;
         
     }
 
@@ -423,6 +423,31 @@ footer{
         width: 23.7rem;
         height: 22rem;    
     }
+}
+
+/* =========================================================================== */
+/*  ===============================   720px  ================================= */
+/* =========================================================================== */
+
+
+@media screen and (max-width: 720px){
+    .nav__clickbtn{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;       
+        right: -100%;
+        top: 19.95rem;
+        background-color: #BEC3C9;
+        width: 20rem;
+        height: 17rem;
+        transition: all 700ms ease;
+    }
+    
+    .slidenav__clickbtn{
+        right: -5rem;
+    }
+
 }
 
 
