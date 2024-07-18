@@ -322,19 +322,16 @@ footer{
 }
 
 
-/* ======================= Media queries for Tablets =================================== */
+/* ======================= Media queries for Tablets Ipads portrai portrait mode =================================== */
 
 @media screen and (max-width: 1024px){}
 
 
-/* =======================Media queries for Mobile phones ============================== */
+/* =========================================================================== */
+/* Tablets and ipads max-width: 767px. */
+/* =========================================================================== */
 
-@media screen and (max-width: 600px){
-
-    .location__map iframe{
-        height: 10rem;
-        width: 10rem;
-    }
+@media screen and (max-width: 767px){
 
     .nav__container{
         display: flex;
@@ -345,11 +342,22 @@ footer{
     }
 
     .nav__clickbtn{
+        position: absolute;
         display: flex;
-        justify-content:space-around;
-        align-items: center;
-        gap: 0.5em;    
+        flex-direction: column;
+        gap: 1.5rem;       
+        right: -100%;
+        top: 19.95rem;
+        background-color: #BEC3C9;
+        width: 20rem;
+        height: 17rem;
+        transition: all 700ms ease;
     }
+    
+    .slidenav__clickbtn{
+        right: -5rem;
+    }
+   
 
     .nav__clickbtn button{
         width:8rem;
@@ -370,7 +378,7 @@ footer{
         width: 20rem;        
         background-color: #BEC3C9;
         gap: 1rem;
-        transition: all 600ms ease;             
+        transition: all 600ms ease;           
                                 
     }
 
@@ -394,7 +402,12 @@ footer{
     }
 
     .showmenu{
-        display: flex;        
+        display: flex;
+        color: #fff;        
+    }
+
+    .closemenu{
+        color: #fff;
     }
       
 
@@ -403,15 +416,161 @@ footer{
     }
 
     .slide-side-sidebar{
-        right: -12%;
+        right: -13%;
+    }
+
+    .carousel-item img{    
+        width: 23.7rem;
+        height: 22rem;    
+    }
+}
+
+
+
+/* =========================================================================== */
+/*  ===============================   600px   ================================= */
+/* =========================================================================== */
+
+@media screen and (max-width: 600px){
+
+    .location__map iframe{
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .nav__container{
+        display: flex;
+        justify-content:end;
+        align-items: center;
+        width: 80%
+        
+    }
+
+    .nav__clickbtn{
+        position: absolute;
+        display: flex;
+        flex-direction: column;       
+        right: -100%;
+        top: 19.95rem;
+        background-color: #BEC3C9;
+        width: 20rem;
+        height: 17rem;
+        transition: all 700ms ease;
+    }
+    
+    .slidenav__clickbtn{
+        right: -3.8rem;
+    }
+   
+
+    .nav__clickbtn button{
+        width:8rem;
+    }
+
+    .close_open-icon{
+        padding: 0.5rem;        
+    }
+
+
+    .menu__items{
+        position: absolute;
+        display: flex;
+        flex-direction: column;     
+        right: -100%;
+        top: 5rem;
+        height: 15rem;
+        width: 20rem;        
+        background-color: #BEC3C9;
+        gap: 1rem;
+        transition: all 600ms ease;           
+                                
+    }
+
+    .menu__items:hover{
+        box-shadow: var(--box-shadow);
+    }
+
+    .menu__items a{        
+        width: 90%;        
+    }
+
+    .close_open-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.25rem;
+    }
+
+    .close_open-icon span.showmenu, .close_open-icon span.closemenu{
+        font-size: 2rem;
+    }
+
+    .showmenu{
+        display: flex;
+        color: #fff;        
+    }
+
+    .closemenu{
+        color: #fff;
+    }
+      
+
+    .show{
+        display: none;
+    }
+
+    .slide-side-sidebar{
+        right: -13%;
     }
 
     .carousel-item img{
        
         width: 15rem;
         height: 15rem;
-        background-color: #FF5F1F;
+        
+    }   
+
+}
+
+/* =========================================================================== */
+/* Mobile (Smartphone) max-width: 480px. */
+/* =========================================================================== */
+
+@media screen and (max-width: 480px){
+    body{
+        background-color: black;
     }
+
+    header .main__features{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.3rem;
+        color: var(--text-whiteColor);
+    }
+
+    .nav__clickbtn{
+        position: absolute;
+        display: flex;
+        flex-direction: column;       
+        right: -100%;
+        top: 19.95rem;
+        background-color: #BEC3C9;
+        width: 20rem;
+        height: 17rem;
+        transition: all 700ms ease;
+    }
+    
+    .slidenav__clickbtn{
+        right:-3.1rem;
+    }
+
+    .carousel-item img{       
+        width: 25rem;
+        height: 15rem;        
+    }
+   
 
 }
 
