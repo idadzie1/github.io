@@ -221,8 +221,11 @@ header .main__features .right__side{
 
 
 .carousel-item img{    
-    width: 42.5rem;
-    height: 22rem;    
+    /* width: 42.5rem;
+    height: 22rem;     */
+
+    width: max-content;
+    height: max-content;
 }
 
 /* ================= Sections Styling ======================= */
@@ -381,7 +384,9 @@ footer{
     }
 
     .close_open-icon{
-        display: flex;        
+        display: flex;
+        /* justify-content: start;
+        align-items: start;         */
         color: #fff;
         font-size: larger;        
     }
@@ -412,19 +417,19 @@ footer{
     .carousel-item img{
         width: 15rem;
         height: 10rem;
+
     }
 
 
-    input{
-        width: 10rem;
+    form input{
+        width: 15rem;
                 
     }
 
 
-    textarea{
-        width: 10rem;
-        height: 10rem;
-        
+    form textarea{
+        width: 20rem;
+        height: 10rem;        
     }
 
     footer{
@@ -535,17 +540,18 @@ footer{
         .carousel-item img{
             width: 15rem;
             height: 10rem;
+            
         }
     
     
-        input{
+        form input{
             width: 15rem;        
         }
     
     
-        textarea{
-            width: 15rem;
-            height: 15rem;
+        form textarea{
+            width: 20rem;
+            height: 10rem;
         }
     
         footer{
@@ -649,6 +655,7 @@ footer{
     .carousel-item img{
         width: 15rem;
         height: 10rem;
+        
     }
 
 
@@ -658,8 +665,8 @@ footer{
 
 
     textarea{
-        width: 15rem;
-        height: 15rem;
+        width: 20rem;
+        height: 10rem;
     }
 
     footer{
@@ -766,19 +773,19 @@ footer{
     }
 
     .carousel-item img{
-        width: 20rem;
-        height: fit-content
+        width: 15rem;
+        height: 10rem;
     }
 
 
     input{
-        width: 25rem;        
+        width: 15rem;        
     }
 
 
     textarea{
-        width: 25rem;
-        height: 25rem;
+        width: 20rem;
+        height: 10rem;
     }
 
     footer{
@@ -878,19 +885,19 @@ footer{
     }
 
     .carousel-item img{
-        width: 20rem;
-        height: fit-content
+        width: 15rem;
+        height: 10rem;
     }
 
 
     input{
-        width: 25rem;        
+        width: 15rem;        
     }
 
 
     textarea{
-        width: 25rem;
-        height: 25rem;
+        width: 20rem;
+        height: 10rem;
     }
 
     footer{
@@ -898,11 +905,9 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    } 
-
+    }
 
 }
-
 
 
 
