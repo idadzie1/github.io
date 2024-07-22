@@ -37,8 +37,7 @@ body{
     width: 100vw;
     background-color: var(--color-primary);
     color: var(--text-whiteColor);
-    display: flex;
-    /* flex-direction: column; */
+    display: flex;   
     justify-content: center;
     align-items: center;
     height: 10rem;
@@ -73,8 +72,7 @@ nav{
     top: 10rem;
     left: 0;
     width: 100vw;
-    height: 5rem;
-    /* background-color: #BEC3C9; */
+    height: 5rem;   
     background-color: var(--color-primary);
     z-index: 1;
     transition: all 600ms ease;               
@@ -95,8 +93,7 @@ nav:hover{
     height: 5rem;
     margin: 0 auto;    
     display: grid;
-    place-items: center;
-    /* background-color: red     */
+    place-items: center;    
     
 }
 
@@ -114,9 +111,7 @@ nav:hover{
     align-items: center;
     padding: 0.25rem;            
     gap: 0.1rem;
-    height: 5rem;
-    /* width: 90%;     */
-    /* background-color: #CCD0D5; */
+    height: 5rem;   
 }
 
 .menu__items a{
@@ -220,12 +215,10 @@ header .main__features .right__side{
 }
 
 
-.carousel-item img{    
-    /* width: 42.5rem;
-    height: 22rem;     */
+.carousel-item img{  
 
-    width: max-content;
-    height: max-content;
+    width: fit-content;
+    height: fit-content;
 }
 
 /* ================= Sections Styling ======================= */
@@ -328,7 +321,7 @@ footer{
 
 /* ======================= MEDIA QUERIES FOR DEIFFRENT SCREEN SIZES ============================ */
 
-@media screen and (max-width: 320px){
+@media screen and (min-width: 320px) and (max-width: 360px){
     .banner{       
         top: 5rem;       
     }
@@ -354,7 +347,8 @@ footer{
         right: -100%;
         z-index: 2;
         background-color: #BEC3C9;
-        height: max-content;       
+        height: max-content;
+        transition: all 600ms ease;       
     }
 
     .slide-side-sidebar{
@@ -373,6 +367,7 @@ footer{
         height: max-content;
         width: 11rem;
         gap: 2rem;
+        transition: all 700ms ease;
     }
 
     .slidenav__clickbtn{
@@ -385,8 +380,6 @@ footer{
 
     .close_open-icon{
         display: flex;
-        /* justify-content: start;
-        align-items: start;         */
         color: #fff;
         font-size: larger;        
     }
@@ -415,21 +408,20 @@ footer{
     }
 
     .carousel-item img{
-        width: 15rem;
-        height: 10rem;
-
+        width: 17rem;
+        height: fit-content;
     }
 
 
     form input{
-        width: 15rem;
-                
+        width: 15rem;                       
     }
 
 
     form textarea{
         width: 20rem;
-        height: 10rem;        
+        height: 10rem;   
+
     }
 
     footer{
@@ -451,7 +443,7 @@ footer{
 
 /* ==================================== Width 480px ================================ */
 
-@media screen and (max-width: 480px) and (orientation: portrait){
+@media screen and (min-width: 361px)and (max-width: 480px) and (orientation: portrait){
         .banner{       
             top: 5rem;       
         }
@@ -538,20 +530,21 @@ footer{
         }
     
         .carousel-item img{
-            width: 15rem;
-            height: 10rem;
+            width: 18rem;
+            height: fit-content;
             
         }
     
     
         form input{
-            width: 15rem;        
+            width: 15rem;      
+            
         }
     
     
         form textarea{
             width: 20rem;
-            height: 10rem;
+            height: 15rem;
         }
     
         footer{
@@ -567,7 +560,7 @@ footer{
 
 
 /* ================== For Mobile Phones Portrait or Landscape View ===================*/
-@media screen and (max-width: 640px){
+@media screen and (min-width: 481px) and (max-width: 640px){
     .banner{       
         top: 5rem;       
     }
@@ -653,14 +646,15 @@ footer{
     }
 
     .carousel-item img{
-        width: 15rem;
-        height: 10rem;
+        width: 19rem;
+        height: fit-content;
         
     }
 
 
     input{
-        width: 15rem;        
+        width: 15rem;     
+        
     }
 
 
@@ -685,7 +679,7 @@ footer{
 
 
 /* ================================== Width 768px ====================================*/
-@media screen and (max-width: 768px){
+@media screen and (min-width: 641px) and (max-width: 768px){
 
     .banner{       
         top: 5rem;       
@@ -773,19 +767,21 @@ footer{
     }
 
     .carousel-item img{
-        width: 15rem;
-        height: 10rem;
+        width: 41rem;
+        height: fit-content;
     }
 
 
     input{
-        width: 15rem;        
+        width: 20rem; 
+        
     }
 
 
     textarea{
-        width: 20rem;
+        width: 25rem;
         height: 10rem;
+
     }
 
     footer{
@@ -798,7 +794,7 @@ footer{
 }
 
 
-@media screen and (max-width: 1024px){
+@media screen and (min-width: 769px) and (max-width: 1024px){
     .banner{       
         top: 5rem;       
     }
@@ -885,18 +881,19 @@ footer{
     }
 
     .carousel-item img{
-        width: 15rem;
-        height: 10rem;
+        width: 42rem;
+        height: fit-content;
     }
 
 
     input{
-        width: 15rem;        
+        width: 22rem;   
+
     }
 
 
     textarea{
-        width: 20rem;
+        width: 30rem;
         height: 10rem;
     }
 
@@ -905,7 +902,8 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
+    } 
+
 
 }
 
