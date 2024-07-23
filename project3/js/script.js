@@ -1,5 +1,6 @@
 
 
+
 document.addEventListener('DOMContentLoaded', ()=>{
 
     const horizontalbars = document.querySelector('.showmenu');
@@ -37,6 +38,11 @@ document.addEventListener('DOMContentLoaded', ()=>{
     });    
 
 });
+
+const theYear = document.querySelector("footer small");
+const d = new Date();
+const year = d.getFullYear();
+theYear.innerText ="©" + year;
 
 
 
