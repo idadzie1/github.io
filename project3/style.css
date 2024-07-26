@@ -218,8 +218,11 @@ header .main__features .right__side{
 
 .carousel-item img{  
 
-    width: fit-content;
-    height: fit-content;
+    /* width: fit-content;
+    height: fit-content; */
+
+    width: max-content;
+    height: max-content;
 }
 
 /* ================= Sections Styling ======================= */
@@ -550,8 +553,11 @@ footer small{
     }
 
     .carousel-item img{
-        width: 17rem;
-        height: fit-content;
+        /* width: 17rem;
+        height: fit-content; */
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
     }
 
 
@@ -683,8 +689,11 @@ footer small{
         }
     
         .carousel-item img{
-            width: 18rem;
-            height: fit-content;
+            /* width: 18rem;
+            height: fit-content; */
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
             
         }
     
@@ -810,8 +819,11 @@ footer small{
     }
 
     .carousel-item img{
-        width: 19rem;
-        height: fit-content;
+        /* width: 19rem;
+        height: fit-content; */
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
         
     }
 
@@ -942,8 +954,12 @@ footer small{
     }
 
     .carousel-item img{
-        width: 41rem;
-        height: fit-content;
+        /* width: 41rem;
+        height: fit-content; */
+
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
     }
 
 
@@ -1067,8 +1083,12 @@ footer small{
     }
 
     .carousel-item img{
-        width: 42rem;
-        height: fit-content;
+        /* width: 42rem;
+        height: fit-content; */
+
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
     }
 
 
