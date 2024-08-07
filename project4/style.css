@@ -92,20 +92,23 @@ color: var(--secondarttext-color);
 
 .logins{
 display: flex;
-gap: 2.5rem;
+gap: 0.5rem;
 }
 
 .logins .gold, .logins .silver, .logins .dash{
 background-color: antiquewhite;
-width: 4.2rem;
+width: 5rem;
 height: 3rem;
 display: flex;
 justify-content: center;
 align-items: center;
-border-radius: 1rem;
+border-radius: 0.5rem;
 box-shadow: var(--boxShadow-two);
-/* box-shadow: var(--boxShadow-one); */
+text-align: center; 
+color: #111;   
 }
+
+
 
 .logins .gold{
 background-color: gold;
@@ -215,6 +218,7 @@ left: 6rem;
 top: 10rem;
 font-size:5rem;
 color: #fff;
+text-align: center;
 }
 
 section .header-image img{
