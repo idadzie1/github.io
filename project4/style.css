@@ -4,6 +4,7 @@
   --bodyColor:#fff;
   --darkbodycolor:#333333;
   --secondary-bodyColor:#6495ED;
+  --dodgeBlue-color:#1E90FF;
   --maintext-color: #111;
   --secondarttext-color:#fff;
   --footebkgrd-color:#E8E8E8;
@@ -25,13 +26,18 @@ list-style: none;
 
 }
 
+html {
+scroll-behavior: smooth;
+}
+
+
 body{    
 height: 100vh;
 width: 100vw;
 display: grid;
 place-items: center;
 color: var(--maintext-color);
-background-color: var(--bodyColor);
+background-color: var(--bodyColor);    
 /* overflow-x: hidden; */
 }
 
@@ -83,11 +89,15 @@ border-radius: 50%;
 
 .pwr ul{
 display: flex;
-gap: 3rem;
+gap: 0;
 }
 
 .pwr ul a{
 color: var(--secondarttext-color);
+}
+
+.pwr ul a.a-class{
+text-align: center;
 }
 
 .logins{
@@ -157,7 +167,14 @@ align-items: center;
 background-color: var(--btn-color);    
 }
 
-
+.active{
+/* height: 5rem;
+width: 6rem;
+display: flex;
+justify-content: center;
+align-items: center; */
+background-color: var(--btn-color); 
+}
 
 .light-dark{
 display: flex;
@@ -276,7 +293,73 @@ gap: 3rem;
 /* border: solid 4px red; */
 }
 
+/* ========================== Main section ================================ */
 
+section#main{
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items:center;
+justify-content: space-evenly;
+gap: 1rem;
+padding: 2rem;
+
+}
+
+section#main .mainfeatures{
+width: 100%;
+display: grid;
+grid-template-columns: 1fr 1fr;  
+
+}
+
+.features{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 1rem;
+
+}
+
+.features-image{
+display: flex;
+justify-content: center;
+align-items: center;
+border: solid 15px var(--nav-Color);
+}
+
+.features-image img{
+width: 100%;
+height: 25rem;
+}
+
+/* ================================ End of main Section ========================= */
+
+.list-heading{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.list ul{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: start;
+gap: 1rem; 
+
+}
+
+.list ul li{
+list-style: disc;
+transition: all 200ms ease;
+}
+
+.list ul li:hover{
+transform: translateX(4px);
+cursor: pointer;
+}
 
 /* ==================== Benefits Section ========================= */
 
@@ -593,6 +676,14 @@ height: auto;
 
 }
 
+section#main .mainfeatures{
+width: 100%;
+display:flex;
+flex-direction: column;
+gap: 2rem; 
+
+}
+
 section#benefits{
 width: 100vw;
 margin-top: 1rem;
@@ -774,6 +865,14 @@ section#about .articles{
   width: 100%;
   height: auto;    
 
+}
+
+section#main .mainfeatures{
+width: 100%;
+display:flex;
+flex-direction: column;
+gap: 2rem; 
+  
 }
 
 section#benefits{
@@ -958,6 +1057,14 @@ section#about .articles{
 
 }
 
+section#main .mainfeatures{
+width: 100%;
+display:flex;
+flex-direction: column;
+gap: 2rem; 
+  
+}
+
 section#benefits{
   width: 100vw;
   margin-top: 1rem;
@@ -1138,6 +1245,14 @@ section#about .articles{
   width: 100%;
   height: auto;    
 
+}
+
+section#main .mainfeatures{
+width: 100%;
+display:flex;
+flex-direction: column;
+gap: 2rem; 
+  
 }
 
 section#benefits{
