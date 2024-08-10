@@ -557,13 +557,15 @@ justify-content: center;
 align-items: center;
 width: 2rem;
 height: 2rem;
-border-radius: 50%;   
+border-radius: 50%;
+font-size: 2rem;   
 background-color:var(--secondarttext-color);   
 
 }
 
 .socialmedia .bi-whatsapp{
 color: #00e600;
+
 }
 
 
@@ -746,21 +748,26 @@ height: 15rem;
 
 footer#footer{
 width: 100vw;
-}
-
-
-footer .location-address{
 display: flex;
-width: fit-content;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+}
 
+
+
+footer .location-address{
+display: flex;    
+flex-direction: column;
+justify-content: center;
+align-items: center;    
 }
 
 
 .location-address .location{
 gap: 3rem;
+width: 100%;
+text-align: center;
 }
 
 .location-address .socialmedia{
@@ -936,7 +943,11 @@ section#contact{
 
 
 footer#footer{
-  width: 100vw;
+width: 100vw;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
 
@@ -952,6 +963,8 @@ footer .location-address{
 
 .location-address .location{
   gap: 3rem;
+  width: 100%;
+  text-align: center;
 }
 
 .location-address .socialmedia{
@@ -1127,6 +1140,10 @@ section#contact{
 
 footer#footer{
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -1142,7 +1159,14 @@ footer .location-address{
 
 .location-address .location{
   gap: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;       
 }
+
 
 .location-address .socialmedia{
   flex-direction: row;
@@ -1316,7 +1340,11 @@ section#contact{
 
 
 footer#footer{
-  width: 100vw;
+width: 100vw;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
 
@@ -1332,6 +1360,8 @@ footer .location-address{
 
 .location-address .location{
   gap: 3rem;
+  width: 100%;
+  text-align: center;
 }
 
 .location-address .socialmedia{
@@ -1497,7 +1527,11 @@ section#contact{
 
 
 footer#footer{
-  width: 100vw;
+width: 100vw;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
 
@@ -1513,6 +1547,8 @@ footer .location-address{
 
 .location-address .location{
   gap: 3rem;
+  width: 100%;
+  text-align: center;
 }
 
 .location-address .socialmedia{
