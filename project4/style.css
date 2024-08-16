@@ -1181,9 +1181,22 @@ footer .location-address{
 
 @media screen and (min-width: 640px) and (max-width: 768px){
 
-nav .container .logo{
+/* nav .container .logo{
   display: none;
-}
+} */
+
+.logo{
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-color: #fff;
+  }
+  
+  .logo img{
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  }
 
 nav .container .pwr ul{
   position: absolute;
@@ -1376,9 +1389,22 @@ footer .location-address{
 
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
-nav .container .logo{
+/* nav .container .logo{
   display: none;
-}
+} */
+
+.logo{
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-color: #fff;
+  }
+  
+  .logo img{
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  }
 
 nav .container .pwr ul{
   position: absolute;
